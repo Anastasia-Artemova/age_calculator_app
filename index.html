@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Outfit:wght@400;700&family=Poppins:wght@400;700;800&family=Roboto:wght@400;700&family=Work+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Age calculator app</title>
+
+</head>
+<body>
+  <div class="container">
+
+    <div class="input-box">
+      <div class="field day">
+        <p class="title">DAY</p>
+        <input class="btn day" id="day" type="text" placeholder="DD">
+        <p id="error_pop_up" class="uninialized day">This field is required</p>
+        <p id="error_pop_up" class="error day">Must be a valid day</p>
+      </div>
+      <div class="field month">
+        <p class="title">MONTH</p>
+        <input class="btn month" id="month" type="text" placeholder="MM">
+        <p id="error_pop_up" class="uninialized month">This field is required</p>
+        <p id="error_pop_up" class="error month">Must be a valid month</p>
+      </div>
+      <div class="field year">
+        <p class="title">YEAR</p>
+        <input class="btn year" id="year" type="text" placeholder="YYYY">
+        <p id="error_pop_up" class="uninialized year">This field is required</p>
+        <p id="error_pop_up" class="error year">Must be a valid year</p>
+      </div>
+    </div>
+
+    <div class="line">
+      <hr style="background-color: hsl(0, 0%, 86%); width: 100%; height: 1px; 
+      border: none; margin-top: 30px;">
+      <input class="calcbtn" type="button">
+    </div>
+
+    <div class="display-box">
+      <p class="years"><span id="output">--</span>years</p>
+      <p class="months"><span id="output">--</span>months</p>
+      <p class="days"><span id="output">--</span>days</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
